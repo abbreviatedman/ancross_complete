@@ -95,31 +95,43 @@ We've used React a little at this point, and we know we're going to have to use 
 
 Set up a state object with a `names` property to take the array we're generating off our API call, then, in your `render`, iterate over that variable to render a list of every villager's name. Think about how we need to navigate this object to get the data we want to see!
 
+You'll have to take a deep dive into each object, and you may have to do some research on JavaScript Object Bracket Notation if you're unfamiliar.
+
+See if you can do it before you look at what's below!
+
 <details>
 <summary></summary>
-at the top
+
+Make an initial state.
 
 ```js
-let [data, setData] = useState({ hits: [] });
+state = {
+  villagers: [],
+};
 ```
 
-Adapt the useEffect:
+Set it our array of objects when we hit our API.
 
 ```js
-useEffect(() => {
+componentDidMount() {
   fetch("http://acnhapi.com/v1/villagers/")
     .then((response) => response.json())
-    .then((rdata) => {
-      rdata = Object.values(rdata);
-      setData({ hits: rdata });
+    .then((data) => {
+      this.setState({ villagers: Object.values(data) });
     });
-}, []);
+}
 ```
 
+Render each villagers' name (on the name object, using bracket notation to make sure the dash isn't interpreted as a subtraction symbol.)
+
 ```js
-let list = data.hits.map((villager, i) => {
-  return <p>{villager.name["name-USen"]}</p>;
-});
+return (
+  <div>
+    {this.state.villagers.map((villager) => (
+      <p>{villager.name["name-USen"]}</p>
+    ))}
+  </div>
+);
 ```
 
 </details>

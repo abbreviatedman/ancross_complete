@@ -6,16 +6,16 @@
 
 ## Getting Started
 
-To start, let's go ahead and instantiate a new react app. We'll use:
+To start, let's go ahead and instantiate a new react app, right into your fork of this repo. We'll use:
 
 ```bash
-create-react-app villager_faves
+create-react-app villager-search.
 ```
 
 and we won't need any additional NPM packages, so we're now ready to
 
 ```bash
-cd villager_faves
+cd villager-search
 code .
 npm start
 ```

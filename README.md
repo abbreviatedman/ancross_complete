@@ -100,7 +100,7 @@ You'll have to take a deep dive into each object, and you may have to do some re
 See if you can do it before you look at what's below!
 
 <details>
-<summary></summary>
+<summary>Solution</summary>
 
 Make an initial state.
 

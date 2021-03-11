@@ -50,7 +50,7 @@ Run `npm start` and make sure you've got a heading rendered!
 
 ## Let's hit up that API!
 
-Import `axios` at the top of your file, then, in your class, add a `componentDidMount` method and let's make a request to an Animal Crossing API.
+Add a `componentDidMount` method and let's make a request to an Animal Crossing API.
 
 ```js
 componentDidMount() {

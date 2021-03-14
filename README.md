@@ -1,4 +1,4 @@
-# Villager Search - A Complex API Journey
+# 'AnCross', or 'a React Lesson about complex APIs'
 
 ### What are we doing?
 

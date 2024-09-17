@@ -1,8 +1,8 @@
-# 'AnCross', or 'a React Lesson about complex APIs'
+# 'Villager Search', or 'a React Lesson about complex APIs'
 
 ### What are we doing?
 
-**Glad you asked.** Today we will be making a react app that queries an API that returns an _object of objects_. We want to process that object and return an instance of each one, then make a feature where we can "favorite" as many instances as we want!
+**Glad you asked.** Today we will be making a React app that queries an API that returns an _object of objects_. We want to process that object and return an instance of each one, filtered by a search.
 
 ## Getting Started
 
@@ -172,13 +172,13 @@ Rendered in `DisplayCards.jsx`:
 
 Got it? Well done!
 
-At this point, we can relax and sit back, knowing that we can render API data on a page effectively.
+At this point, we can relax and sit back, knowing that we can render API data on a page effectively. This is a pretty good MVP!
 
 ## Take it further
 
-But what if we wanted to add a feature where users could search for a particular villager? How could we implement dynamic search functionality?
+But what if we wanted to add a feature where users could search for a particular villager? How could we implement dynamic search functionality? This is an ambitious stretch goal, but what do we have in spades? Ambition!
 
-Let's start implementing it in our `App.jsx`. We'll need:
+Let's start implementing search in our `App.jsx`. We'll need:
 
 - An input box with an `onChange` handler.
 - In that handler, putting our input box's current value onto state, where we can easily manage it.
